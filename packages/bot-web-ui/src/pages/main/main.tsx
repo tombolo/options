@@ -22,6 +22,7 @@ import { getPlatformSettings } from '@deriv/shared';
 import Finesttool from '../finesttool';
 import RiskManagementCalculator from '../riskManagementCalculator';
 import Strategy from '../strategy';
+import Copytrading from '../copytrading';
 import { FaChartBar, FaChartLine, FaPuzzlePiece, FaChessKnight, FaUsers, FaShieldAlt, FaRobot, FaTachometerAlt } from 'react-icons/fa';
 
 
@@ -227,6 +228,18 @@ const AppWrapper = observer(() => {
                             id='id-dbot-dashboard'
                         >
                             <Finesttool />
+                        </div>
+
+                        <div
+                            label={
+                                <span style={{ color: '#ffffff', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center' }}>
+                                    <FaChartBar size={14} />
+                                    Copy Trading
+                                </span>
+                            }
+                            id='id-dbot-dashboard'
+                        >
+                            <Copytrading />
                         </div>
 
 
