@@ -2,20 +2,12 @@ import DBotStore from '../scratch/dbot-store';
 import { save_types } from '../constants/save-type';
 
 // Import XML files as raw text
-import autoRobotXml from './bots/binary_smasher_2.xml?raw';
 import overUnderXml from './bots/binary_smasher.xml?raw';
 import nilotemine from './bots/nilote_mine.xml?raw';
 
 // Load bot XMLs from imported files
 export const getStaticBots = async () => {
     return [
-        {
-            id: 'binary_smasher_2',
-            name: 'binary_smasher_2',
-            xml: autoRobotXml,
-            timestamp: Date.now(),
-            save_type: save_types.LOCAL,
-        },
         {
             id: 'binary_smasher',
             name: 'binary_smasher',
